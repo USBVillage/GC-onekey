@@ -33,9 +33,9 @@ function command_1(){
 	fi
 	mkdir Genshin
 	cd Genshin
-	wget "https://ghproxy.com/https://github.com/Grasscutters/Grasscutter/releases/download/"$tag"/grasscutter-"${tag:1:5}".jar"
-	wget "https://ghproxy.com/https://github.com/cool-chill/GC-onekey/raw/main/ssl/keystore.p12"
-	git clone https://ghproxy.com/https://github.com/tamilpp25/Grasscutter_Resources.git
+	wget "https://github.com/Grasscutters/Grasscutter/releases/download/"$tag"/grasscutter-"${tag:1:5}".jar"
+	wget "https://github.com/cool-chill/GC-onekey/raw/main/ssl/keystore.p12"
+	git clone /https://github.com/tamilpp25/Grasscutter_Resources.git
 	cp -r Grasscutter_Resources/Resources .
 	mv Resources resources
 	rm -rf Grasscutter_Resources
@@ -170,8 +170,8 @@ function command_6(){
 	rm -f Genshin/*.jar
 	cd Genshin
 	rm -f config.json
-	wget "https://ghproxy.com/https://github.com/Grasscutters/Grasscutter/releases/download/"$tag"/grasscutter-"${tag:1:5}".jar"
-	git clone https://ghproxy.com/https://github.com/tamilpp25/Grasscutter_Resources.git
+	wget "/https://github.com/Grasscutters/Grasscutter/releases/download/"$tag"/grasscutter-"${tag:1:5}".jar"
+	git clone /https://github.com/tamilpp25/Grasscutter_Resources.git
 	cp -r Grasscutter_Resources/Resources .
 	mv Resources resources
 	rm -rf Grasscutter_Resources
