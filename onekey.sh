@@ -35,7 +35,7 @@ function command_1(){
 	cd Genshin
 	wget "https://gitlab.com/madao8250/1.4.5-dev/-/raw/main/grasscutter-1.4.5-dev.jar"
 	wget "https://github.com/cool-chill/GC-onekey/raw/main/ssl/keystore.p12"
-	wget "https://git.crepe.moe/grasscutters/Grasscutter_Resources/-/raw/main/Grasscutter_Resources-3.3.zip"
+	wget https://git.crepe.moe/grasscutters/Grasscutter_Resources/-/raw/main/Grasscutter_Resources-3.3.zip
 	unzip Grasscutter_Resources-3.3.zip
 	cp -r Grasscutter_Resources-3.3/Resources .
 	mv Resources resources
