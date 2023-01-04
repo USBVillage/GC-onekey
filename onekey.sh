@@ -33,7 +33,7 @@ function command_1(){
 	fi
 	mkdir Genshin
 	cd Genshin
-	git clone https://gitlab.com/madao8250/1.4.5-dev.git
+	wget "https://gitlab.com/madao8250/1.4.5-dev/-/raw/main/grasscutter-1.4.5-dev.jar"
 	wget "https://github.com/cool-chill/GC-onekey/raw/main/ssl/keystore.p12"
 	git clone https://git.crepe.moe/grasscutters/Grasscutter_Resources.git
 	zip -r Grasscutter_Resources-3.3.zip
