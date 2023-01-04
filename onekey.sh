@@ -35,9 +35,9 @@ function command_1(){
 	cd Genshin
 	wget "https://github.com/Grasscutters/Grasscutter/releases/download/"$tag"/grasscutter-"${tag:1:5}".jar"
 	wget "https://github.com/cool-chill/GC-onekey/raw/main/ssl/keystore.p12"
-	git clone https://git.crepe.moe/grasscutters/Grasscutter_Resources.git
-	cp -r Grasscutter_Resources/.git .
-	mv .git resources
+	git clone https://gitlab.com/YuukiPS/GC-Resources.git
+	cp -r GC-Resources/Resources .
+	mv Resources resources
 	rm -rf Grasscutter_Resources
 	chmod -R 777 /root/Genshin
 	echo "服务端准备完毕！开始启动服务端！"
