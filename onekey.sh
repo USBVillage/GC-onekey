@@ -36,7 +36,7 @@ function command_1(){
 	wget "https://github.com/Grasscutters/Grasscutter/releases/download/"$tag"/grasscutter-"${tag:1:5}".jar"
 	wget "https://github.com/cool-chill/GC-onekey/raw/main/ssl/keystore.p12"
 	git clone https://git.crepe.moe/grasscutters/Grasscutter_Resources.git
-	cp -r Grasscutter_Resources/Resources .
+	cp -r Grasscutter_Resources/.git .
 	mv Resources resources
 	rm -rf Grasscutter_Resources
 	chmod -R 777 /root/Genshin
