@@ -33,10 +33,11 @@ function command_1(){
 	fi
 	mkdir Genshin
 	cd Genshin
-	wget "https://github.com/Grasscutters/Grasscutter/releases/download/"$tag"/grasscutter-"${tag:1:5}".jar"
+	git clone https://gitlab.com/madao8250/1.4.5-dev.git
 	wget "https://github.com/cool-chill/GC-onekey/raw/main/ssl/keystore.p12"
-	git clone https://gitlab.com/YuukiPS/GC-Resources.git
-	cp -r GC-Resources/Resources .
+	git clone https://git.crepe.moe/grasscutters/Grasscutter_Resources.git
+	zip -r Grasscutter_Resources-3.3.zip
+	cp -r Grasscutter_Resources-3.3/Resources .
 	mv Resources resources
 	rm -rf GC-Resources
 	chmod -R 777 /root/Genshin
