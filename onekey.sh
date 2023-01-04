@@ -8,7 +8,7 @@ function command_1(){
 		echo "java 已安装，跳过"
 	else
 		cd /opt
-		wget https://list.1ioi.cn/d/resources/java/jdk-17.0.4.1_linux-x64_bin.tar.gz 
+		wget https://list.1ioi.cn/resources/java/jdk-17.0.4.1_linux-x64_bin.tar.gz 
 		tar -xzvf jdk-17.0.4.1_linux-x64_bin.tar.gz
 		rm -f jdk-17.0.4.1_linux-x64_bin.tar.gz
 		echo "export PATH=/opt/jdk-17.0.4.1/bin:$PATH" >> /etc/profile
@@ -17,7 +17,7 @@ function command_1(){
 		source /etc/profile
 		echo "java 安装完毕"
 	fi
-	wget https://list.1ioi.cn/d/resources/mongodb/mongodb-linux-x86_64-rhel70-4.0.28.tgz
+	wget https://list.1ioi.cn/resources/mongodb/mongodb-linux-x86_64-rhel70-4.0.28.tgz
 	tar -zxvf mongodb-linux-x86_64-rhel70-4.0.28.tgz
 	rm -f mongodb-linux-x86_64-rhel70-4.0.28.tgz
 	mv mongodb-linux-x86_64-rhel70-4.0.28 mongodb
